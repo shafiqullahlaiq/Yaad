@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">یاد</string>
+    <string name="app_description">ستاسي د ژبي د زده کړي همکار</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    // Repeat word string
+    <string name="today_reapead">ننی ورځی تکرار</string>
+    <string name="lastday_reapead">تیري ورځی تکرار</string>
+    <string name="this_week_reapead">روانی اونی تکرار</string>
+    <string name="last_week_reapead">تیری اونی تکرار</string>
+    <string name="this_month_reapead">روانی میاشتی تکرار</string>
+    <string name="last_month_reapead">تیری میاشتی تکرار</string>
+    <string name="all_reapeat">ټول تکرار</string>
+</resources>

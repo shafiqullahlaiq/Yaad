@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddWord">
+
+    <include layout="@layout/activity_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/activitiesToolbar"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/lyt_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_lyt_addword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="لغات"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_add_word"
+                    android:layout_width="@dimen/input_layout_width"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_lyt_addMean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_input_lyt_addword"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="معنی"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_add_mean"
+                    android:layout_width="@dimen/input_layout_width"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_input_lyt_addMean"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                tools:ignore="NotSibling">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add"
+                    android:layout_width="@dimen/standard_btn_width"
+                    android:layout_height="wrap_content"
+                    android:text="اضافه" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="@dimen/standard_btn_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_toStartOf="@+id/btn_add"
+                    android:text="لغوه" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

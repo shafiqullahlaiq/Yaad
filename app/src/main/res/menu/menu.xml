@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home" android:title="کور"/>
+    <item android:id="@+id/add_word" android:title="اضافه کوول"/>
+    <item android:id="@+id/repeat_word" android:title="تکرار"/>
+    <item android:id="@+id/exam" android:title="امتحان"/>
+    <item android:id="@+id/badges" android:title="نښانونه"/>
+    <item android:id="@+id/set_target" android:title="هدف"/>
+    <item android:id="@+id/about_us" android:title="زمونږپه اړه"/>
+</menu>

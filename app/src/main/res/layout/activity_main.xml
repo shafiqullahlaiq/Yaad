@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:layoutDirection="rtl"
+    tools:context=".MainActivity"
+    android:background="@color/teal_200"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBar">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@color/teal_200"
+            android:id="@+id/main_toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lyt_drawer"
+        android:layout_below="@+id/appBar"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:id="@+id/nav_main_navigation"
+            android:clickable="true"
+            app:menu="@menu/menu"
+            android:layout_gravity="right"
+            app:headerLayout="@layout/nav_header"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view_main"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
